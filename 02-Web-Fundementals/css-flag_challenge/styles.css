@@ -1,0 +1,27 @@
+body {
+    background-color: antiquewhite;
+}
+
+.FLAG {
+    margin: 1em;
+    height: 180px;
+    width: 270px;
+    background-color: transparent;
+    position: relative;
+}
+
+.german-top {
+    height: 60px;
+    background-color: black;
+}
+
+.german-middle {
+    height: 60px;
+    background-color: red;
+}
+
+.german-bottom {
+    height: 60px;
+    background-color: #FFCC00;
+}
+
