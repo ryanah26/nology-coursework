@@ -25,3 +25,28 @@ body {
     background-color: #FFCC00;
 }
 
+.france-flag {
+    position: relative;
+    top: 10px;
+}
+
+.france-left {
+    width: 90px;
+    height: 180px;
+    background-color: #0055A4;
+    float: left;
+}
+
+.france-middle {
+    width: 90px;
+    height: 180px;
+    background-color: white;
+    float: left;
+}
+
+.france-right {
+    width: 90px;
+    height: 180px;
+    background-color: #EF4135;
+    float: left;
+}
