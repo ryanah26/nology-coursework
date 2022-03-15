@@ -1,4 +1,3 @@
-
 body {
     background-color: antiquewhite;
 }
@@ -11,90 +10,91 @@ body {
     position: relative;
 }
 
-/* German Flag */
+/*French Flag*/
+
+.french-flag {
+    position: absolute;
+}
+
+.french-left {
+    height: 180px;
+    width: 90px;
+    background-color: #0055A4;
+    position: absolute;
+    left: 0px;
+    transition: 1s ease;
+}
+
+.french-middle {
+    height: 180px;
+    width: 90px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 90px;
+    transition: 1s ease;
+}
+
+.french-right {
+    height: 180px;
+    width: 90px;
+    background-color: #EF4135;
+    position: absolute;
+    left: 180px;
+    transition: 1s ease;
+}
+
+/*Irish flag transition*/
+
+.french-flag:hover .french-left {
+    background-color: #169B62;
+}
+
+.french-flag:hover .french-middle {
+    background-color: #FFFFFF;
+}
+
+.french-flag:hover .french-right {
+    background-color: #FF883E;
+}
+
+/*German Flag*/
+
+.german-flag {
+    position: relative;
+    top: 190px;
+}
 
 .german-top {
     height: 60px;
     width: 270px;
-    background-color: black;
+    background-color: #000000;
     transition: 1s ease;
 }
 
 .german-middle {
     height: 60px;
     width: 270px;
-    background-color: red;
+    background-color:#DD0000 ;
     transition: 1s ease;
 }
 
 .german-bottom {
     height: 60px;
     width: 270px;
-    background-color: #FFCC00;
+    background-color: #FFCE00;
     transition: 1s ease;
 }
 
-/* Hungarian Flag */
+/*Hungarian flag transition*/
 
 .german-flag:hover .german-top {
-    background-color: #CE2939;
+    background-color: #CD2A3E;
 }
 
 .german-flag:hover .german-middle {
-    background-color: #fff;
+    background-color: #FFFFFF;
 }
 
 .german-flag:hover .german-bottom {
-    background-color: #477050;
-}
-
-/* French Flag */
-
-.france-flag {
-    position: relative;
-    top: 10px;
-}
-
-.france-left {
-    width: 90px;
-    height: 180px;
-    background-color: #0055A4;
-    /*float: left;*/
-    position: absolute;
-    left: 0px;
-    transition: 1s ease;
-}
-
-.france-middle {
-    width: 90px;
-    height: 180px;
-    background-color: white;
-    /*float: left;*/
-    position: absolute;
-    left: 90px;
-    transition: 1s ease;
-}
-
-.france-right {
-    width: 90px;
-    height: 180px;
-    background-color: #EF4135;
-    /*float: left;*/
-    position: absolute;
-    right: 0px;
-    transition: 1s ease;
-}
-
-/* Irish Flag */
-
-.france-flag:hover .france-left {
-    background-color: #169B62;
-}
-
-.france-flag:hover .france-middle {
-    background-color: white;
-}
-
-.france-flag:hover .france-right {
-    background-color: #FF883E;
+    background-color: #436F4D;
 }
