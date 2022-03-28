@@ -1,7 +1,10 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+nav,
 nav * {
   display: flex;
   justify-content: center;
@@ -14,9 +17,9 @@ nav {
   justify-content: space-between;
   width: 100%;
   height: 50px;
-  font-size: 1.25em;
   background-color: black;
   color: white;
+  font-size: 1.25em;
 }
 
 #nology {
@@ -25,51 +28,69 @@ nav {
   height: 100%;
 }
 
-.links {
+#nology:hover {
+  background-color: blueviolet;
+  transition: 0.3s;
+}
+
+#links {
+  display: flex;
   justify-content: flex-end;
   width: 50%;
   height: 100%;
 }
 
 a {
-  color: white;
   text-decoration: none;
+  color: white;
   width: 33%;
+  height: 100%;
+}
+a:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
 }
 
 main {
-  width: 90%;
   display: flex;
   justify-content: space-between;
-  margin: 25px auto;
+  width: 95%%;
+  height: 500px;
+  padding: 20px;
 }
 
 #panels-left {
   display: flex;
-  width: 70%;
-  justify-content: space-around;
   flex-direction: column;
+  justify-content: space-between;
+  width: 67.5%;
 }
 
 .panel {
   border: solid black 2px;
-  padding: 20px;
+  padding: 15px;
   height: 25%;
-}
-
-#panel-righthand {
-  width: 25%;
-  border: solid black 2px;
-  padding: 20px;
 }
 
 ul {
   margin-left: 50px;
 }
+
 li {
-  margin: 15px;
+  margin: 15px 0;
+}
+
+#panel-right {
+  width: 27.5%;
+  border: solid black 2px;
+  padding: 15px;
 }
 
 p {
   text-align: justify;
+}
+
+h3 {
+  margin-bottom: 10px;
 }
