@@ -7,3 +7,16 @@ function calculateYearUntilRetirement(event) {
    }
    alert(yearsLeft)
 }
+
+function getGreetingInFrench(event) {
+    const greeting = event.target.value;
+
+
+    if (greeting == "hello") {
+        alert("bonjour")
+    } else if (greeting == "goodbye") {
+        alert("au revior")
+    } else {
+        alert("not recognised")
+    }
+}
