@@ -32,3 +32,19 @@ switch (new Date().getDay()) {
         console.log("It's already the weekend!")
         break;
 }
+
+//  Switch cases for veg prices
+
+const vegetable = "carrot";
+switch(vegetable) {
+    case "potato":
+    case "carrot":
+        console.log("£1.29 per kg")
+        break;
+    case "brocolli":
+        console.log("£1.50 per kg")
+        break;
+    case "cabbage":
+        console.log("asparagus")
+        break;
+}
