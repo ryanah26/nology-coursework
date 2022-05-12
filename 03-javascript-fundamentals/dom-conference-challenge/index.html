@@ -89,8 +89,14 @@
 
 
       // EXTENSION Dynamically add a ul/li list beneath the form with the summary points of conference
+        const summaryItems = ["Introduction", "html", "CSS", "Javascript"];
+        const summaryList = document.getElementById("summary-list");
 
-      
+        const summaryItemsHTML = summaryItems.map((summaryItem) => {
+            return `<li>${summaryItem}</li>`;
+        });
+        summaryList.innerHTML = summaryItemsHTML.join("");
+
     </script>
   </body>
 </html>
