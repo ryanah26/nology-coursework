@@ -13,11 +13,15 @@
       * {
         font-family: "Lato";
       }
+
+      .active {
+          background-color: yellow;
+      }
       .valid {
-        border: 1px solid green;
+        border: 5px solid green;
       }
       .invalid {
-        border: 1px solid red;
+        border: 5px solid red;
       }
     </style>
   </head>
@@ -71,10 +75,22 @@
       // 4. Create a handleInputChange function to validate the input
          // Can you add the class 'valid' if it has a value?​
          // Can you  add the 'invalid' class if it does not?
+        formInput[0].addEventListener("input", (event) => {
+            let inputValue = event.target.value;
 
+            if (inputValue != undefined && inputValue.length > 0) {
+                event.target.classList.remove("invalid");
+                event.target.classList.add("valid");
+            } else {
+                event.target.classList.remove("valid");
+                event.target.classList.add("invalid");
+            }
+        });
 
 
       // EXTENSION Dynamically add a ul/li list beneath the form with the summary points of conference
+
+      
     </script>
   </body>
 </html>
