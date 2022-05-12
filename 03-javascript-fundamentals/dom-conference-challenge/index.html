@@ -41,8 +41,11 @@
             <label class="form-label">Email</label>
             <input class="form-input" />
           </div>
-          <button>Send</button>
+          <button onclick="handleRegister()">Send</button>
         </form>
+      </section>
+      <section id="summary">
+          <ul id="summary-list"></ul>
       </section>
     </main>
 
@@ -59,13 +62,17 @@
 
 
       // 3. Create a handleRegister function to run when the form is submitted, a simple pop-up please.
-        
 
+      const handleRegister = () => {
+            alert("You have registered");
+        }
 
 
       // 4. Create a handleInputChange function to validate the input
          // Can you add the class 'valid' if it has a value?​
          // Can you  add the 'invalid' class if it does not?
+
+
 
       // EXTENSION Dynamically add a ul/li list beneath the form with the summary points of conference
     </script>
