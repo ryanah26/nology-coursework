@@ -1,0 +1,67 @@
+.navigation {
+    display: flex;
+    background-color: $color-primary;
+    height: 10vh;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: $font-display;
+    color: $color-white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    display: block;
+    color: $color-white;
+    background-color: $color-secondary;
+    width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+
+    &--form {
+        width: 100%;
+        background-color: $color-dark-grey;
+    }
+}
+
+.intro {
+    text-align: center;
+
+    &__heading {
+        color: $color-primary;
+        font-size: 50px;
+    }
+    
+    &__sub-heading {
+        font-family: $font-display;
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    &__button {
+        margin: 0 auto;
+    }
+}
+
+.wave {
+    vertical-align: top;
+}
+
+.form {
+    background-color: $color-light-grey;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    &__input {
+        margin-bottom: 10px;
+    }
+}
