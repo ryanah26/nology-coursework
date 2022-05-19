@@ -36,13 +36,15 @@ body {
   background-color: #292841;
   padding: 20px;
   height: 70vh;
-  width: 400px;
+  width: 300px;
+  border-radius: 5%;
 }
 .calculator__buttons {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(5, auto);
-  border: 1px solid green;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 .calculator__buttons #ac {
   grid-area: 1/1/2/4;
@@ -99,4 +101,22 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.calculator__number-button {
+  background-color: #4A4E6B;
+  color: #BED3FF;
+}
+.calculator__function-button {
+  background-color: #503F50;
+  color: #ED998D;
+}
+.calculator__ac {
+  background-color: #919191;
+  color: #e1dfdc;
+}
+.calculator__decimal {
+  background-color: #4A4E6B;
+  color: #BED3FF;
 }

@@ -31,14 +31,19 @@ body {
     background-color: $color-calculator;
     padding: 20px;
     height: 70vh;
-    width: 400px;
+    width: 300px;
+    border-radius: 5%;
   }
+
+  
 
   &__buttons {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(5,auto);
-    border: 1px solid green;
+    grid-template-rows: repeat(5, auto);
+    // border: 1px solid green;
+    column-gap: 10px;
+    row-gap: 10px;
     // grid-template-areas:
     //   "ac ac ac divide"
     //   "seven eight nine multiply"
@@ -98,9 +103,31 @@ body {
     }
 
     button {
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
     }
+  }
+
+  &__number-button {
+    background-color: $color-numbutton;
+    color: $color-numbutton-font;
+  }
+
+  &__function-button {
+      background-color: $color-funcbutton;
+      color: $color-funcbutton-font;
+  }
+
+  &__ac {
+      background-color: $color-acbutton;
+      color: $color-acbutton-font;
+  }
+
+  &__decimal {
+      background-color: $color-numbutton;
+      color: $color-numbutton-font;
   }
 }
