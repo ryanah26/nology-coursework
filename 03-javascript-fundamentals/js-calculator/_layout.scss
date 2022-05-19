@@ -1,36 +1,106 @@
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    width: 100%;
-    margin-bottom: 40px;
-    
-    h1 {
-        text-align: center;
-        color: blue;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 40px;
+
+  h1 {
+    text-align: center;
+    color: blue;
+  }
 }
 
 body {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-background;
 }
 
 .calculator {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
+  display: flex;
+  justify-content: center;
+  width: 100%;
 
-.calculator__container {
+  &__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: $color-calculator;
     padding: 20px;
     height: 70vh;
     width: 400px;
-}
+  }
 
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5,auto);
+    border: 1px solid green;
+    // grid-template-areas:
+    //   "ac ac ac divide"
+    //   "seven eight nine multiply"
+    //   "four five six minus"
+    //   "one two three plus"
+    //   "zero zero deci equals";
+    #ac {
+      grid-area: 1 / 1 / 2 / 4;
+    }
+    #divide {
+      grid-area: 1 / 4 / 2 / 5;
+    }
+    #seven {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    #eight {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    #nine {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+    #multiply {
+      grid-area: 2 / 4 / 3 / 5;
+    }
+    #four {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    #five {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+    #six {
+      grid-area: 3 / 3 / 4 / 4;
+    }
+    #minus {
+      grid-area: 3 / 4 / 4 / 5;
+    }
+    #one {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+    #two {
+      grid-area: 4 / 2 / 5 / 3;
+    }
+    #three {
+      grid-area: 4 / 3 / 5 / 4;
+    }
+    #plus {
+      grid-area: 4 / 4 / 5 / 5;
+    }
+    #zero {
+      grid-area: 5 / 1 / 6 / 3;
+    }
+    #decimal {
+      grid-area: 5 / 3 / 6 / 4;
+    }
+    #equals {
+      grid-area: 5 / 4 / 6 / 5;
+    }
+
+    button {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+  }
+}
