@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -14,7 +18,7 @@ header {
 }
 header h1 {
   text-align: center;
-  color: blue;
+  color: #BED3FF;
 }
 
 body {
@@ -34,10 +38,25 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #292841;
-  padding: 20px;
+  padding-bottom: 15px;
   height: 70vh;
   width: 300px;
   border-radius: 5%;
+}
+.calculator__display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #4A4E6B;
+  width: 300px;
+  height: 20vh;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+}
+.calculator__display .calculator__result {
+  color: #BED3FF;
+  padding-right: 35px;
+  font-size: 30px;
 }
 .calculator__buttons {
   display: grid;

@@ -1,3 +1,7 @@
+* {
+    font-family: $font-body;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -8,7 +12,7 @@ header {
 
   h1 {
     text-align: center;
-    color: blue;
+    color: $color-numbutton-font;
   }
 }
 
@@ -29,13 +33,28 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: $color-calculator;
-    padding: 20px;
+    padding-bottom: 15px;
     height: 70vh;
     width: 300px;
     border-radius: 5%;
   }
 
-  
+  &__display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $color-numbutton;
+    width: 300px;
+    height: 20vh;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+
+    .calculator__result {
+        color: $color-numbutton-font;
+        padding-right: 35px;
+        font-size: $font-size-large;
+    }
+}
 
   &__buttons {
     display: grid;
