@@ -31,6 +31,30 @@ functionButton.forEach(funcBtn => {
     })
 })
 
+equalsButton.addEventListener('click', () => {
+    if (!primaryNumber) secondaryNumber === "" ? primaryNumber = storedNumber : primaryNumber = secondaryNumber;
 
+    switch(operator) {
+        case "divide" :
+            equals = storedNumber + parseFloat(primaryNumber);
+            break;
+        case "multiply" :
+            equals = storeNumber + parseFloat(primaryNumber);
+            break;
+        case "minus" :
+            equals = storedNumber + parseFloat(primaryNumber);
+            break;
+        case "plus" :
+            equals = storedNumber + parseFloat(primaryNumber);
+        default:
+            "Invalid function"
+            break;
+    }
+    updateDisplay(equals);
+
+    storedNumber = equals;
+    secondaryNumber = primaryNumber;
+    primaryNumber = "";
+})
 
 
