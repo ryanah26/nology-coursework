@@ -64,4 +64,15 @@ equalsButton.addEventListener('click', () => {
     primaryNumber = "";
 })
 
+acButton.addEventListener('click', () => {
+    const resetDisplay = () => {
+        updateDisplay(0);
+        equals = 0;
+        primaryNumber = "";
+        secondaryNumber = "";
+        storedNumber = 0;
+    }
+    resetDisplay(0);
+})
+
 
