@@ -31,6 +31,13 @@ functionButton.forEach(funcBtn => {
     })
 })
 
+decimalButton.addEventListener('click', () => {
+    if (!primaryNumber.includes('.')) {
+        primaryNumber += ('.');
+        updateDisplay(primaryNumber);
+    }
+})
+
 equalsButton.addEventListener('click', () => {
     if (!primaryNumber) secondaryNumber === "" ? primaryNumber = storedNumber : primaryNumber = secondaryNumber;
 
