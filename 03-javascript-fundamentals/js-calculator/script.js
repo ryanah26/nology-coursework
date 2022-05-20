@@ -10,7 +10,7 @@ const functionButton = document.querySelectorAll('.js-funcBtn');
 const numberButton = document.querySelectorAll('.js-numBtn');
 const decimalButton = document.querySelectorAll('.js-deciBtn');
 const equalsButton = document.querySelectorAll('.js-equalsBtn');
-const calculatorDisplay = document.querySelectorAll('.js-display');
+const calculatorDisplay = document.querySelectorAll('.js-result');
 
 const updateDisplay = (number) => calculatorDisplay.innerHTML = number;
 
